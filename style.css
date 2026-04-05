@@ -94,8 +94,7 @@ h1 { font-size: 2rem; font-weight: normal; line-height: 1.2; margin-bottom: 0.25
 
 /* ── SKILLS ── */
 .sk-table { width: 100%; border-collapse: collapse; }
-.sk-table tr { border-bottom: 1px solid var(--rule); }
-.sk-table tr:last-child { border-bottom: none; }
+.sk-table tr { border-bottom: none; }
 .sk-table td { padding: 0.85rem 0; vertical-align: top; }
 .sk-cat {
   font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -157,8 +156,7 @@ h1 { font-size: 2rem; font-weight: normal; line-height: 1.2; margin-bottom: 0.25
 }
 
 /* ── EXPERIENCE ── */
-.exp-row { padding: 1.1rem 0; border-bottom: 1px solid var(--rule); }
-.exp-row:last-child { border-bottom: none; }
+.exp-row { padding: 1.1rem 0; }
 .exp-top {
   display: flex; justify-content: space-between; align-items: baseline;
   margin-bottom: 0.1rem; gap: 1rem;
@@ -182,9 +180,9 @@ h1 { font-size: 2rem; font-weight: normal; line-height: 1.2; margin-bottom: 0.25
 /* ── EDUCATION ── */
 .edu-row {
   display: grid; grid-template-columns: 100px 1fr;
-  gap: 1rem; padding: 0.95rem 0; border-bottom: 1px solid var(--rule);
+  gap: 1rem; padding: 0.95rem 0;
 }
-.edu-row:last-child { border-bottom: none; }
+.edu-row:last-child { }
 .edu-yr {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 0.78rem; color: var(--light); padding-top: 0.12rem;
@@ -202,9 +200,9 @@ h1 { font-size: 2rem; font-weight: normal; line-height: 1.2; margin-bottom: 0.25
 /* ── AWARDS ── */
 .award-row {
   display: flex; justify-content: space-between; align-items: baseline;
-  padding: 0.7rem 0; border-bottom: 1px solid var(--rule); gap: 1rem;
+  padding: 0.7rem 0; gap: 1rem;
 }
-.award-row:last-child { border-bottom: none; }
+.award-row:last-child { }
 .award-name {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 0.88rem; color: var(--mid);
@@ -229,9 +227,9 @@ h1 { font-size: 2rem; font-weight: normal; line-height: 1.2; margin-bottom: 0.25
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 0.86rem; color: var(--mid);
   display: flex; justify-content: space-between;
-  padding: 0.35rem 0; border-bottom: 1px solid var(--rule); gap: 1rem;
+  padding: 0.35rem 0; gap: 1rem;
 }
-.teach-row:last-child { border-bottom: none; }
+.teach-row:last-child { }
 .teach-course { flex: 1; }
 .teach-yr { color: var(--light); white-space: nowrap; }
 
