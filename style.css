@@ -214,7 +214,7 @@ h1 { font-size: 2rem; font-weight: normal; line-height: 1.2; margin-bottom: 0.25
 }
 
 /* ── TEACHING ── */
-.teach-group { margin-bottom: 1.6rem; }
+.teach-group { margin-bottom: 1.6rem; border-left: 2px solid var(--rule); padding-left: 1.2rem; }
 .teach-group:last-child { margin-bottom: 0; }
 .teach-school {
   font-size: 0.94rem; margin-bottom: 0.05rem;
