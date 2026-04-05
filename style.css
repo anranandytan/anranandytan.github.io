@@ -58,8 +58,8 @@ section:last-child { border-bottom: none; }
 #about { padding-top: 4.5rem; }
 
 .about-grid {
-  display: grid; grid-template-columns: 1fr 118px;
-  gap: 2.5rem; align-items: start;
+  display: grid; grid-template-columns: 1fr 190px;
+  gap: 2.5rem; align-items: stretch;
 }
 
 h1 { font-size: 2rem; font-weight: normal; line-height: 1.2; margin-bottom: 0.25rem; }
@@ -86,13 +86,11 @@ h1 { font-size: 2rem; font-weight: normal; line-height: 1.2; margin-bottom: 0.25
 .btn-fill:hover { background: #2a2a2a; border-color: #2a2a2a; }
 
 .avatar {
-  width: 118px; height: 118px; background: var(--bg2);
-  border: 1px solid var(--rule); display: flex;
-  align-items: center; justify-content: center;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 0.66rem; color: var(--light); text-align: center;
+  width: 190px; min-height: 190px; height: 100%;
+  background: var(--bg2); border: 1px solid var(--rule);
+  overflow: hidden;
 }
-.avatar img { width: 118px; height: 118px; object-fit: cover; display: block; }
+.avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 /* ── SKILLS ── */
 .sk-table { width: 100%; border-collapse: collapse; }
@@ -262,11 +260,29 @@ footer {
 /* ── RESPONSIVE ── */
 @media (max-width: 560px) {
   .about-grid    { grid-template-columns: 1fr; }
-  .avatar        { order: -1; }
+  .avatar        { order: -1; width: 100%; height: 220px; }
   .contact-grid  { grid-template-columns: 1fr; }
   .sk-cat        { width: 100px; }
   .exp-top       { flex-direction: column; gap: 0.1rem; }
   footer         { flex-direction: column; gap: 0.3rem; }
   .nav-links     { gap: 1rem; }
   .award-row     { flex-direction: column; gap: 0.1rem; }
+}
+
+/* ── DARK MODE ── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink:   #f0efec;
+    --mid:   #a8a7a4;
+    --light: #666664;
+    --rule:  #2a2a28;
+    --bg:    #111110;
+    --bg2:   #1a1a18;
+    --link:  #7aabf0;
+  }
+  .btn-fill         { background: var(--ink); color: #111110; }
+  .btn-fill:hover   { background: #d0cfcc; border-color: #d0cfcc; color: #111110; }
+  .btn:hover        { background: var(--ink); color: #111110; }
+  .tag-a            { border-color: var(--mid); color: var(--mid); }
+  .tag-a:hover      { border-color: var(--ink); color: var(--ink); }
 }
