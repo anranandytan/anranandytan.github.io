@@ -70,11 +70,11 @@ h1 { font-size: 2rem; font-weight: normal; line-height: 1.2; margin-bottom: 0.25
 }
 .affil {
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 0.82rem; color: var(--light); margin-bottom: 1.6rem;
+  font-size: 0.82rem; color: var(--light); margin-bottom: 1.2rem;
 }
-.bio { font-size: 0.95rem; color: var(--mid); margin-bottom: 0.75rem; line-height: 1.75; }
+.bio { font-size: 0.95rem; color: var(--mid); margin-top: 1.2rem; margin-bottom: 0; line-height: 1.65; }
 
-.hero-links { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.6rem; }
+.hero-links { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.4rem; }
 .btn {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   display: inline-block; font-size: 0.73rem; font-weight: 700;
